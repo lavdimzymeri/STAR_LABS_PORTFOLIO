@@ -1,12 +1,14 @@
 /* contact Section */
 body{
-	background: rgb(232, 222, 222);
+	background: rgb(255, 255, 255);
+	background-image: url(./img/bg-texture.png);
+
 }
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
 	color: black;
-	margin-bottom: 10px;
+	margin-bottom: 4rem;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	text-align: center;
@@ -14,45 +16,13 @@ body{
 .section-title span {
 	color: crimson;
 }
-.container.contact__container{
+.contact__container{
     width: 100%;
-    display: flex;
     gap: 12%;
 	align-items: center;
 }
-.contact-options{
-	color: aliceblue;
-	display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-.contact-option{
-    background: #485563;
-    padding: 1.5rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition:  all 400ms ease;
-}
 
-.contact-option:hover{
-    background: transparent;
-    border-color:rgba(77, 181, 255, 0.4);
-	color: black;
 
-}
-
-.icon{
-	font-size: 4.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.contact-option a{
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
-}
 
 /*FORMA*/
 form{
@@ -62,24 +32,26 @@ form{
 	gap: 1rem;
 }
 input, textarea{
-	width: 100%;
+	width: 50%;
 	padding: 1.5rem;
 	border-radius: 0.5rem;
-	background: transparent;
+	background: rgb(176, 176, 176);
 	border: 3px solid black;
 	resize:none ;
-	color: gray;
+	color: rgb(81, 16, 16);
 }
 
 .btn{
 	width: max-content;
 	display: inline-block;
 	color: white;
-	padding: 0.75rem  1.2rem;
-	border-radius: 0.4rem;
+	padding: 0.75rem  4.2rem;
+	border-radius: 0.9rem;
 	cursor: pointer;
 	border: 1px solid black;
 	background: #485563;
+	margin-bottom: 1rem;
+	margin-left: 1.2rem;
 
 }
 
@@ -88,13 +60,18 @@ input, textarea{
     color: black;
     border-color: transparent;
 }
+.form-group{
+	margin: 1rem;
+	align-items: center;
+}
 /*End contact Section */
 
 
 /*footer */
 
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100% );
+
 }
 
 #footer .footer {
@@ -102,9 +79,11 @@ input, textarea{
 	flex-direction: column;
 	padding-top: 50px;
 	padding-bottom: 10px;
+	background-image: url(./img/bg-texture.png);
+
 }
 #footer h2 {
-	color: white;
+	color: rgb(255, 255, 255);
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: 0.1rem;
@@ -112,23 +91,25 @@ input, textarea{
 	margin-bottom: 10px;
     text-align: center;
 }
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
+
+
+.cta {
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 30px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
 }
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
-}
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
-}
-#footer .social-item:hover img {
-	filter: grayscale(0);
-}
-#footer p {
+.cta:hover {
 	color: white;
-	font-size: 1.3rem;
+	background-color: crimson;
+	border: 2px solid rgb(0, 0, 0);
+
 }
